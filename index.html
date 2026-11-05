@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171a31">
+<title>The Unseen House — A game of inner work</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><div class="sigil">✳</div><div><div class="brand-name">The Unseen House</div><span class="brand-sub">Institute of the psyche</span></div></div>
+  <div class="side-label">The institute</div>
+  <nav class="nav" aria-label="Main navigation">
+    <button class="nav-button active" data-view="house"><span>⌂</span> The House</button>
+    <button class="nav-button" data-view="residents"><span>♙</span> Residents <i id="residentCount">02</i></button>
+    <button class="nav-button" data-view="chronicle"><span>▤</span> Chronicle</button>
+  </nav>
+  <div class="sidebar-card"><div class="side-label">A note from the founder</div><p>“One does not become enlightened by imagining figures of light, but by making the darkness conscious.”</p><span>— C. G. Jung</span></div>
+  <div class="side-bottom"><div class="moon">☾</div><div><strong>First season</strong><small>Seven days in the psyche</small></div><button id="helpBtn" aria-label="How to play">?</button></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><div class="eyebrow">A small life, tended carefully</div><h1 id="pageTitle">The House</h1></div><div class="top-right"><div class="save-state"><span class="save-dot"></span><span id="saveLabel">Your progress is kept</span></div><button class="reset-button" id="resetBtn">Begin again <span>↻</span></button></div></header>
+<div class="game-wrap" id="app"></div>
+<footer class="footer"><span>THE UNSEEN HOUSE <b>·</b> A GAME OF INNER WORK</span><span>LISTEN INWARD <b>✳</b> WALK GENTLY</span></footer>
+</main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="game.js"></script>
+</body>
+</html>
